@@ -1,24 +1,93 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一个网页</title>
+    <title>Example Domains</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e; /* 深灰色背景 */
+            color: #e0e0e0; /* 浅灰色文字 */
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            background-color: #333; /* 导航栏背景色 */
+        }
+
+        .navbar a {
+            color: #e0e0e0; /* 导航栏文字颜色 */
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: #ffffff; /* 鼠标悬停时文字颜色 */
+            text-decoration: underline;
+        }
+
+        /* 内容区域样式 */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ffffff; /* 标题颜色 */
+        }
+
+        h2 {
+            color: #cccccc; /* 副标题颜色 */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        code {
+            background-color: #444; /* 代码块背景色 */
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #f8f8f8; /* 代码块文字颜色 */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的网页</h1>
-    </header>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="#home">主页</a>
+        <a href="#domains">HUNT列表</a>
+        <a href="#guide">常用信息</a>
+        <a href="#contact">联系我们</a>
+    </div>
 
-    <main>
-        <p>这是一个简单的HTML网页示例。</p>
-        <p>你可以在这里添加更多内容，比如图片、列表、表格等。</p>
-        <p>点击下面的链接访问示例网站：</p>
-        <a href="https://www.example.com" target="_blank">访问示例网站</a>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 我的网页</p>
-    </footer>
+    <!-- 内容区域 -->
+    <div class="container">
+        <h1 id="home">Example Domains</h1>
+        <p>This page provides a list of example domains that can be used in documentation, testing, or demonstrations.</p>
+        
+        <h2 id="domains">Generic Top-Level Domains (gTLDs)</h2>
+        <ul>
+            <li><code>example.com</code></li>
+            <li><code>example.net</code></li>
+            <li><code>example.org</code></li>
+            <li><code>example.edu</code></li>
+            <li><code>example.gov</code></li>
+        </ul>
+    </div>
 </body>
 </html>
